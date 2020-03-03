@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var woord = "JavaScript rocks!"
+        var nieuwwoord = woord.substring(10, 16);
+        document.write(nieuwwoord)
+
+        function vervangWoord() {
+            if (document.form.input1.value != "rocks") {
+                document.form.input4.value = 'dit woord ken ik niet';
+            } else if (document.form.input1.value == "rocks") {
+                document.form.input4.value = woord + "rocks";
+            }
+        }
+    </script>
+    <form name="form">
+        <p>Zin:</p>
+        <input type="text" name="input1" size="100%">
+        <p>Zoek dit woord<input type="text" name="input2" size="25%"></p>
+        <p>Dit woord komt in de plaats <input type="text" name="input3" size="25%"></p>
+        <button onclick="vervangWoord()">klik</button>
+        <p>De nieuwe zin: </p>
+        <input type="text" name="input4" size="100%">
+    </form>
+</body>
+
+</html>

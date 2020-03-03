@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var alfabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+        var alfabetScore = ['1', '3', '3', '2', '1', '4', '2', '4', '1', '8', '5', '1', '3', ' 1', '1', '3', '10', '1', '1', '1', '1', '4', '4', '8', '4', '10'];
+        document.write('<h1>Scrabble punten berekenaar</h1>');
+
+
+
+        function score() {
+
+            if (woord == null || woord.length == 0 || woord == "0") {
+                document.write("Er is iets verkeerd gelopen! ");
+            }
+
+            var woord = prompt('Welk woord?');
+            for (x = 0; x = woord.length; x++)
+                teken = woord.charAt();
+
+            document.write(teken);
+
+        }
+        score();
+    </script>
+</body>
+
+</html>

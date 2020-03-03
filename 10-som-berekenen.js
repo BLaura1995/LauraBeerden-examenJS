@@ -1,0 +1,7 @@
+function voegtoe() {
+
+}
+
+function bereken() {
+
+}
