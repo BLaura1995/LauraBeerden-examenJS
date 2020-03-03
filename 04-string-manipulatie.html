@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var voornaam = "Laura";
+        var achternaam = "beerden";
+        var naam = voornaam + achternaam;
+
+        document.write("hallo " + naam.substring(0, 5) + " " + naam.substring(5, 15));
+
+        document.write("<p> Jouw naam bevat " + naam.length + " karakters </p>");
+
+        // Maak een var aan genaamd filename. Hierin steek je de tekst: javaScriptFrameWork. Druk deze af op het scherm. Resultaat (let op de quotes): De originele filename is: 'javaScriptFrameWork' 
+        var filename = "JavaScriptFrameWork";
+        document.write("<p>De originele filename is: \'" + filename + "\'</p>");
+        // Zet de letters van de var om in kleine letters. Let op, dit is niet enkel tonen, maar echt omzetten. Resultaat (let op de quotes): De filename kan beter in kleine letters getypt worden, dus: 'javascriptframework'. 
+        document.write("<p>De filenaam kan beter in kleine letters getypt worden, dus:  \'" + filename.toLowerCase() + "\'</p>");
+
+
+        // Maak 2 nieuwe variabelen aan waarin je via de substring() methode de filename opsplitst. Resultaat (let op de quotes): Als je 'javascriptframework' opsplitst, krijg je : 'javascript' en 'framework'. 
+        var filename = "JavaScriptFrameWork";
+        var javascript = filename.substring(0, 10);
+        var framework = filename.substring(10, 20);
+
+
+        document.write("<p>Als je \'" + filename.toLowerCase() + " \' opsplitst, krijg je : " + "\'" + javascript.toLowerCase() + "\'" + " " + "\'" + framework.toLowerCase() + "\'" + "</p>");
+
+
+        // Maak een nieuwe var en steek het 5e karakter van de filename var erin. Resultaat (let op de quotes): Het zesde karakter (volgens mensen) in 'javascriptframework' is: 'c'. 
+        var karakter = filename.charAt(5);
+        document.write("Het zesde karakter (volgens mensen) in \'" + filename.toLowerCase() + "\' is " + "\'" + karakter + "\'");
+    </script>
+</body>
+
+</html>
